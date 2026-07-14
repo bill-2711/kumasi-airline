@@ -1,0 +1,157 @@
+/* FONT SIZE SYSTEM (px) 
+11.11px / 13.33px / 16px / 19.2px / 23.04px / 27.65px / 33.18px / 39.81px / 47.78px */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #475569;
+  line-height: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 16px 32px;
+  background-color: rgba(229, 225, 225, 0.404);
+}
+
+.logo {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  background-color: #2563eb;
+  padding: 8px 16px;
+  display: inline-block;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  color: #2563eb;
+  background-color: #bed0f9;
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 3.2rem;
+  list-style: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #2563eb;
+}
+
+.section-hero {
+  background-image:
+    linear-gradient(rgba(190, 208, 249, 0.5), rgba(233, 239, 253, 0.5)),
+    url("./img/shui-miles-NuIXhtrTbY0-unsplash.jpg");
+
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  margin: 0 auto;
+  width: 130rem;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+}
+
+.heading-primary {
+  font-size: 6.2rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+}
+
+span {
+  font-weight: 700;
+  font-size: 7rem;
+}
+
+.hero-btn {
+  background-color: rgba(229, 225, 225, 0.404);
+  padding: 8px 16px;
+  color: #475569;
+  text-decoration: none;
+}
+
+.hero-btn-l {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-btn-head {
+  display: inline-block;
+  width: 250px;
+  background-color: rgba(229, 225, 225, 0.404);
+  color: #475569;
+  text-decoration: none;
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.dark {
+  background-color: #495057;
+  display: inline-block;
+  width: 100px;
+  color: #475569;
+  text-decoration: none;
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.hero-btn-sub-head {
+  width: 280px;
+  line-height: 1.5;
+  color: #475569;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+ion-icon {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+ion-icon:hover {
+  transform: translateX(10px);
+}
