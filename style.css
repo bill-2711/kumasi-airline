@@ -19,15 +19,6 @@ body {
   line-height: 1;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  font-size: 20px;
-  font-weight: 700;
-  padding: 16px 32px;
-  background-color: rgba(229, 225, 225, 0.404);
-}
-
 /* ==========================================
    LOGO
 ========================================== */
@@ -45,20 +36,60 @@ nav {
   opacity: 0.85;
 }
 
-.logo-icon {
-  font-size: 2rem;
-  color: #475569;
-  transition: all 0.1s ease;
-}
-
 .logo:hover .logo-icon {
   transform: translateY(90deg);
 }
 
 .logo span {
-  color: #475569;
+  color: rgba(229, 225, 225, 0.648);
   font-size: 1.8rem;
 }
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  padding: 16px 32px;
+  background: linear-gradient(
+    135deg,
+    rgba(44, 62, 80, 0.85),
+    rgba(189, 195, 199, 0.35)
+  );
+  backdrop-filter: blur(16px);
+}
+
+.main-nav-list {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #495057;
+  font-weight: 500;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+.main-nav-list li:nth-child(-n + 3) a {
+  color: #bdc3c7;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #74c0fc;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
 
 .first_hero_btn .booking-submit:link,
 .first_hero_btn .booking-submit:visited {
@@ -66,31 +97,75 @@ nav {
   background-color: rgba(229, 225, 225, 0.404);
   padding: 8px 16px;
   display: inline-block;
-  border-radius: 10px;
+  border-radius: 2.5px;
   font-size: 16px;
   transition: all 0.3s ease;
 }
 
-.main-nav-list {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  list-style: none;
+#search {
+  background-color: #bdc3c7;
 }
 
-.main-nav-link:link,
-.main-nav-link:visited {
+.heading-primary {
+  font-size: 6.2rem;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+}
+
+.first_hero_btn {
+  background-color: rgba(229, 225, 225, 0.404);
+  padding: 12px 16px;
+  color: #475569;
   text-decoration: none;
-  color: inherit;
-  font-weight: 500;
-  font-size: 20px;
+  font-size: 1rem;
   transition: all 0.3s ease;
+  border-radius: 2.5px;
 }
 
-.main-nav-link:hover,
-.main-nav-link:active {
-  color: #2563eb;
+.hero-btn-head {
+  display: inline-block;
+  width: 250px;
+  background-color: rgba(229, 225, 225, 0.404);
+  color: #475569;
+  text-decoration: none;
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  border-radius: 2.5px;
 }
+
+.first_hero_btn:hover,
+.first_hero_btn:active,
+.hero-btn-head:hover,
+.hero-btn-head:active {
+  background-color: rgba(229, 225, 225, 0.563);
+  transform: translateY(-0.3rem);
+}
+.sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  width: 150px;
+}
+
+.dark {
+  background-color: #495057;
+  display: inline-block;
+  width: 100px;
+  color: #475569;
+  text-decoration: none;
+  padding: 16px 32px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 2.5px;
+}
+/* ==========================================
+   HERO SECTION
+========================================== */
 
 .section-hero {
   background-image:
@@ -113,14 +188,6 @@ nav {
   padding: 30rem 0 5rem 0;
 }
 
-.heading-primary {
-  font-size: 6.2rem;
-  font-weight: 400;
-  line-height: 1.1;
-  margin-bottom: 3.2rem;
-  text-transform: uppercase;
-}
-
 span {
   font-weight: 700;
   font-size: 7rem;
@@ -130,57 +197,10 @@ span {
   max-width: fit-content;
 }
 
-.first_hero_btn {
-  background-color: rgba(229, 225, 225, 0.404);
-  padding: 12px 16px;
-  color: #475569;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-}
-
-.first_hero_btn:hover,
-.first_hero_btn:active,
-.hero-btn-head:hover,
-.hero-btn-head:active {
-  background-color: rgba(229, 225, 225, 0.563);
-  transform: translateY(-0.3rem);
-}
-.sub {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  width: 150px;
-}
-
 .hero_booking_form {
   margin: 2rem 0 2rem 0;
   display: flex;
   gap: 1rem;
-}
-
-.hero-btn-head {
-  display: inline-block;
-  width: 250px;
-  background-color: rgba(229, 225, 225, 0.404);
-  color: #475569;
-  text-decoration: none;
-  padding: 16px 32px;
-  font-size: 1.2rem;
-  font-weight: 700;
-  transition: all 0.3s ease;
-}
-
-.dark {
-  background-color: #495057;
-  display: inline-block;
-  width: 100px;
-  color: #475569;
-  text-decoration: none;
-  padding: 16px 32px;
-  font-size: 1.2rem;
-  font-weight: 700;
 }
 
 .hero-btn-sub-head {
@@ -190,6 +210,16 @@ span {
   text-decoration: none;
   font-weight: 400;
 }
+
+/* ==========================================
+   icons SECTION
+========================================== */
+.logo-icon {
+  font-size: 2rem;
+  color: rgba(229, 225, 225, 0.648);
+  transition: all 0.1s ease;
+}
+
 .sub-book-head {
   display: flex;
   align-items: center;
@@ -198,16 +228,12 @@ span {
 .book {
   color: #fff;
   transition: all 0.3s ease;
-  /* display: flex; */
   justify-content: space-between;
   display: inline-block;
 }
 
 .book:hover {
   color: #495057;
-  /* transition: all 0.3s ease;
-  justify-content: space-between;
-  display: inline-block; */
 }
 
 ion-icon:hover {
