@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="shortcut icon"
-      href="./cropped_circle_image.png"
+      href="./img/cropped_circle_image.png"
       type="image/x-icon"
     />
     <title>Kumasi Int. Airport</title>
@@ -20,35 +20,40 @@
   <body>
     <header>
       <nav>
-        <div class="logo">
-          <ion-icon name="paper-plane-outline"></ion-icon>KSI AIRLINES
-        </div>
-        <div>
-          <ul class="main-nav-list">
-            <li><a class="main-nav-link" href="#">From</a></li>
-            <li><a class="main-nav-link" href="#">To</a></li>
-            <li><a class="main-nav-link" href="#">Departure Date</a></li>
-            <li><a class="main-nav-link" href="#">Return Date</a></li>
-            <li><a class="main-nav-link" href="#">Passengers</a></li>
-            <li><a class="main-nav-link" href="#">Cabin Class</a></li>
-          </ul>
-        </div>
-        <a class="btn" href="#">BUTTON</a>
+        <a href="#" class="logo">
+          <ion-icon name="paper-plane-outline" class="logo-icon"></ion-icon>
+          <span>KSI AIRLINES</span>
+        </a>
+
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">From</a></li>
+          <li><a class="main-nav-link" href="#">To</a></li>
+          <li><a class="main-nav-link" href="#">Departure Date</a></li>
+          <li><a class="main-nav-link" href="#">Return Date</a></li>
+          <li><a class="main-nav-link" href="#">Passengers</a></li>
+          <li><a class="main-nav-link" href="#">Cabin Class</a></li>
+        </ul>
+
+        <a class="first_hero_btn booking-submit" href="#">Search Flights</Search></a>
       </nav>
     </header>
+
+        <!-- ================= HERO ================= -->
+
     <section class="section-hero">
       <div class="hero">
         <div class="hero-text-box">
           <h1 class="heading-primary">
-            Where <br />do you want to <br /><span>explore.</span>
+            Where <br />do you want to <br /><strong>explore.</strong>
           </h1>
-          <div>
-            <a href="#" class="hero-btn">Book a Flight</a>
-            <a href="#" class="hero-btn">Explore Destinations</a>
-            <a href="#" class="hero-btn">Explore Destinations</a>
+
+          <div class="hero-actions">
+            <a href="#" class="first_hero_btn btn-primary">Book a Flight</a>
+            <a href="#" class="first_hero_btn btn-secondary">ONE WAY</a>
+            <a href="#" class="first_hero_btn btn-secondary">MULTI CITY</a>
           </div>
 
-          <div class="hero-btn-l">
+          <div class="hero_booking_form">
             <a href="#" class="hero-btn-head"
               >WHERE?
               <p class="hero-btn-sub-head">Your destinations</p>
@@ -67,9 +72,39 @@
               >CABIN
               <p class="hero-btn-sub-head">November27, 2026</p>
             </a>
+
             <a href="#" class="hero-btn-head dark"
-              ><ion-icon size="large" name="arrow-forward-outline"></ion-icon
+              ><ion-icon
+                class="book"
+                size="large"
+                name="arrow-forward-outline"
+              ></ion-icon
             ></a>
+          </div>
+
+                      <!-- Quick Links -->
+          <div class="quick-links">
+            <a href="#" class="first_hero_btn quick-link"
+              >Check in
+              <ion-icon
+                class="sub-book"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </a>
+            <a href="#" class="first_hero_btn quick-link"
+              >Flight Status
+              <ion-icon
+                class="sub-book"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </a>
+            <a href="#" class="first_hero_btn quick-link"
+              >Baggage Info
+              <ion-icon
+                class="sub-book"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </a>
           </div>
         </div>
         <div class="hero-img-box">

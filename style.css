@@ -9,10 +9,13 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
+
 body {
   font-family: "Inter", sans-serif;
   color: #475569;
+  overflow-x: hidden;
   line-height: 1;
 }
 
@@ -25,33 +28,53 @@ nav {
   background-color: rgba(229, 225, 225, 0.404);
 }
 
+/* ==========================================
+   LOGO
+========================================== */
 .logo {
   display: flex;
-  gap: 0.5rem;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  gap: 1rem;
+  text-decoration: none;
+  transition: all 0.1s ease;
 }
 
-.btn:link,
-.btn:visited {
+.logo:hover {
+  opacity: 0.85;
+}
+
+.logo-icon {
+  font-size: 2rem;
+  color: #475569;
+  transition: all 0.1s ease;
+}
+
+.logo:hover .logo-icon {
+  transform: translateY(90deg);
+}
+
+.logo span {
+  color: #475569;
+  font-size: 1.8rem;
+}
+
+.first_hero_btn .booking-submit:link,
+.first_hero_btn .booking-submit:visited {
   text-decoration: none;
-  background-color: #2563eb;
+  background-color: rgba(229, 225, 225, 0.404);
   padding: 8px 16px;
   display: inline-block;
   border-radius: 10px;
-  color: #fff;
   font-size: 16px;
   transition: all 0.3s ease;
-}
-
-.btn:hover {
-  transform: translateY(-0.3rem);
-  color: #2563eb;
-  background-color: #bed0f9;
 }
 
 .main-nav-list {
   display: flex;
   justify-content: center;
-  gap: 3.2rem;
+  gap: 1rem;
   list-style: none;
 }
 
@@ -72,7 +95,7 @@ nav {
 .section-hero {
   background-image:
     linear-gradient(rgba(190, 208, 249, 0.5), rgba(233, 239, 253, 0.5)),
-    url("./img/shui-miles-NuIXhtrTbY0-unsplash.jpg");
+    url("./img/robertwaghorn-plane-2899225.jpg");
 
   height: 100vh;
   background-size: cover;
@@ -85,10 +108,9 @@ nav {
   margin: 0 auto;
   width: 130rem;
   height: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 9.6rem;
+  gap: 1rem;
+  padding: 30rem 0 5rem 0;
 }
 
 .heading-primary {
@@ -104,17 +126,38 @@ span {
   font-size: 7rem;
 }
 
-.hero-btn {
-  background-color: rgba(229, 225, 225, 0.404);
-  padding: 8px 16px;
-  color: #475569;
-  text-decoration: none;
+.hero-actions {
+  max-width: fit-content;
 }
 
-.hero-btn-l {
-  margin-top: 4rem;
+.first_hero_btn {
+  background-color: rgba(229, 225, 225, 0.404);
+  padding: 12px 16px;
+  color: #475569;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.first_hero_btn:hover,
+.first_hero_btn:active,
+.hero-btn-head:hover,
+.hero-btn-head:active {
+  background-color: rgba(229, 225, 225, 0.563);
+  transform: translateY(-0.3rem);
+}
+.sub {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  width: 150px;
+}
+
+.hero_booking_form {
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  gap: 1rem;
 }
 
 .hero-btn-head {
@@ -126,6 +169,7 @@ span {
   padding: 16px 32px;
   font-size: 1.2rem;
   font-weight: 700;
+  transition: all 0.3s ease;
 }
 
 .dark {
@@ -146,12 +190,43 @@ span {
   text-decoration: none;
   font-weight: 400;
 }
-
-ion-icon {
+.sub-book-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.book {
   color: #fff;
   transition: all 0.3s ease;
+  /* display: flex; */
+  justify-content: space-between;
+  display: inline-block;
+}
+
+.book:hover {
+  color: #495057;
+  /* transition: all 0.3s ease;
+  justify-content: space-between;
+  display: inline-block; */
 }
 
 ion-icon:hover {
   transform: translateX(10px);
+}
+
+.sub-book {
+  transition: all 0.3s ease;
+  font-size: 20px;
+}
+
+.quick-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.quick-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
